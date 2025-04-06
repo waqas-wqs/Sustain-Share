@@ -1,0 +1,65 @@
+[
+    {
+        "img": "/Seperate News/news/img1.jpg",
+        "title": "Emergency Food Relief in Gaza: The Latest Developments",
+        "date": "August 2, 2024",
+        "author": "David Johnson",
+        "link": "/Seperate News/blog-1.html"
+    },
+    {
+        "img": "/Seperate News/news/img2.jpg",
+        "title": "Syria's Hunger Crisis Worsens: International Aid Efforts",
+        "date": "August 1, 2024",
+        "author": "Maya Al-Hadi",
+        "link": "/Seperate News/blog-2.html"
+    },
+    {
+        "img": "/Seperate News/news/img3.jpg",
+        "title": "How the Gaza Conflict Is Impacting Food Distribution",
+        "date": "July 30, 2024",
+        "author": "Omar Khalid",
+        "link": "/Seperate News/blog-3.html"
+    },
+    {
+        "img": "/Seperate News/news/img4.jpg",
+        "title": "Gaza's Struggle: How the Blockade Is Affecting Food Supply",
+        "date": "July 31, 2024",
+        "author": "Rania Al-Munir",
+        "link": "/Seperate News/blog-4.html"
+    },
+    {
+        "img": "/Seperate News/news/img5.jpg",
+        "title": "Inside Syria's Refugee Camps: A Dire Food Shortage Situation",
+        "date": "July 30, 2024",
+        "author": "Nour Al-Rahman",
+        "link": "/Seperate News/blog-5.html"
+    },
+    {
+        "img": "/Seperate News/news/img6.jpg",
+        "title": "Food Insecurity in Venezuela: Causes and Global Responses",
+        "date": "August 4, 2024",
+        "author": "Lucia Martinez",
+        "link": "/Seperate News/blog-6.html"
+    },
+    {
+        "img": "/Seperate News/news/img7.jpg",
+        "title": "Hunger and Drought in Ethiopia: Humanitarian Efforts and Challenges",
+        "date": "August 3, 2024",
+        "author": "Alemayehu Tsegaye",
+        "link": "/Seperate News/blog-7.html"
+    },
+    {
+        "img": "/Seperate News/news/img8.webp",
+        "title": "Agricultural Challenges in Sub-Saharan Africa: Addressing Food Security",
+        "date": "August 2, 2024",
+        "author": "Kwame Bediako",
+        "link": "/Seperate News/blog-8.html"
+    },
+    {
+        "img": "/Seperate News/news/img9.webp",
+        "title": "Climate Change Impact on Agriculture: Global and Local Perspectives",
+        "date": "July 31, 2024",
+        "author": "Sophia Green",
+        "link": "/Seperate News/blog-9.html"
+    }
+]
