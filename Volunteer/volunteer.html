@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Sustain Share</title>
+    <link rel="stylesheet" href="/Volunteer/volunteer.css">
+    <link rel="shortcut icon" href="/images/logo/Sustain Share.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+/* Popup container */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Limit the width */
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+
+    <div style="height: 10px; background-color: #fe6a0d;"></div>
+
+    <!-- DONATE BUTTON -->
+    <div>
+        <a href="/Donation Page/donation.html" style="color: #fff; text-decoration: none;">
+            <button id="donateButton" class="donate-button-side">DONATE</button>
+        </a>
+    </div>
+
+    <!-- HEADER SECTION -->
+   <header>
+    <div class="nav-bar">
+        <div id="nav-logo">
+            <a href="/index.html">
+                <img src="/images/logo/Sustain-share-logo-orange-small.png" alt="Sustain Share Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html" class="nav-links-name">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-links-name">Cause</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-item">
+                            <a href="/Cause/sustainable-agriculture.html">Sustainable <br> Agriculture</a>
+                        </div>
+                        <div class="dropdown-content-item">
+                            <a href="/Cause/food-distribution.html">Food <br> Distribution</a>
+                        </div>
+                        <div class="dropdown-content-item">
+                            <a href="/Cause/community-engagement.html">Community <br> Engagement</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-links-name">About</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-item">
+                            <a href="/404 Page/404-page.html">Who we are</a>
+                        </div>
+                        <div class="dropdown-content-item">
+                            <a href="/About-Us(What we do)/what-we-do.html">What we do</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/News & Updates/news.html" class="nav-links-name">News & Updates</a></li>
+                <li><a href="/Contact-Us/contact.html" class="nav-links-name">Contact Us</a></li>
+                <li class="donate-button-navbar-li">
+                    <a href="/Donation Page/donation.html">
+                        <button class="donate-button-navbar">DONATE</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+ 
+
+    <!-- CONTACT FORM SECTION -->
+     <section class="volunteer-section">
+    <div class="container">
+        <h1>Volunteering with Sustain Share</h1>
+        <p>Are you passionate about building a sustainable future? Join Sustain Share in our mission to promote sustainable agriculture and uplift communities worldwide.</p>
+        
+        <p>As a global network, we connect dedicated volunteers with impactful projects that address critical challenges. Our volunteer program offers opportunities to contribute to initiatives ranging from organic farming and food security to environmental conservation and community development.</p>
+    </div>
+    
+        <div class="highlight-section">
+            <div class="banner">
+            <h2>Sustain Share and the Sustainable Development Goals</h2>
+            <p>Make a global impact. As a Sustain Share volunteer, you’ll work alongside us to achieve the UN Sustainable Development Goals by promoting sustainable agriculture and fostering thriving communities.</p>
+        </div>
+        </div>
+
+
+        <!-- FORM SECTION -->
+
+        <div id="form-container">
+            <form id="volunteerForm" class="form-container">
+                <h2>Volunteer Registration</h2>
+                
+                <label for="name">Name <span>*</span></label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="fatherName">Father's Name <span>*</span></label>
+                <input type="text" id="fatherName" name="fatherName" required>
+    
+                <label for="gender">Gender <span>*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+    
+                <label for="volunteeringFor">Volunteering For <span>*</span></label>
+                <input type="text" id="volunteeringFor" name="volunteeringFor" required>
+    
+                <label for="dob">Date of Birth <span>*</span></label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="phone">Phone <span>*</span></label>
+                <input type="text" id="phone" name="phone" required>
+    
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="city">City <span>*</span></label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="state">State <span>*</span></label>
+                <input type="text" id="state" name="state" required>
+    
+                <label for="country">Country <span>*</span></label>
+                <input type="text" id="country" name="country" required>
+    
+                <label for="occupation">Occupation <span>*</span></label>
+                <input type="text" id="occupation" name="occupation" required>
+    
+                <label for="otherOccupation">Other Occupation</label>
+                <input type="text" id="otherOccupation" name="otherOccupation">
+    
+                <label for="organization">Organization (If any)</label>
+                <input type="text" id="organization" name="organization">
+    
+                <label for="interest">Why are you interested in volunteering for Sustain Share? <span>*</span></label>
+                <textarea id="interest" name="interest" required></textarea>
+    
+                <label for="contribution">How would you contribute towards raising funds for Sustain Share? <span>*</span></label>
+                <textarea id="contribution" name="contribution" required></textarea>
+    
+                <label for="additionalContribution">How else can you contribute to sustainable agriculture education? <span>*</span></label>
+                <textarea id="additionalContribution" name="additionalContribution" required></textarea>
+    
+                <label for="availability">Suggest your availability (Weekdays & Hours) <span>*</span></label>
+                <textarea id="availability" name="availability" required></textarea>
+    
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+    <!-- <Popup Structure  -->
+ <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p id="popup-message"></p>
+        <!-- <button onclick="closePopup()">OK</button> -->
+    </div>
+</div>
+</section> 
+    
+    
+      
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <div class="footer-info">
+                        <div class="footer-logo">
+                            <img src="/images/logo/Sustain-share-logo-full-black-orange.png" alt="Sustain share logo"
+                                id="footer-logo" />
+                        </div>
+                        <p class="footer-description">
+                            "Small acts, when multiplied by millions of people, can transform the world."<br>- Greta Thunberg
+                        </p>
+                        <div class="social-icons">
+                            <span class="social-icon" aria-hidden="true"></span>
+                            <span class="social-icon" aria-hidden="true"></span>
+                            <span class="social-icon" aria-hidden="true"></span>
+                            <span class="social-icon" aria-hidden="true"></span>
+                            <span class="social-icon" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-column">
+                    <div class="newsletter-content">
+                        <h2 class="newsletter-title">Newsletter</h2>
+                        <form class="newsletter-form">
+                            <label for="email-input" class="visually-hidden">Email</label>
+                            <input type="email" id="email-input" class="newsletter-input" placeholder="Email"
+                                aria-label="Email" required>
+                            <button type="submit" class="newsletter-button">Subscribe</button>
+                        </form>
+                        <p class="newsletter-description">
+                            Join us to make a difference! Subscribe to our newsletter to stay informed about our
+                            humanitarian organization and impactful donations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="footer-links">
+            <div class="footer-links-row">
+                <div class="footer-links-column">
+                    <ul class="footer-links-list">
+                        <li>
+                            <h3 class="footer-links-title">Quick Links</h3>
+                        </li>
+                        <li><a href="/Donation Page/donation.html" class="footer-link">Donations</a></li>
+                        <li><a href="/News & Updates/news.html" class="footer-link">New & Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <ul class="footer-links-list">
+                        <li>
+                            <h3 class="footer-links-title">Causes</h3>
+                        </li>
+                        <li><a href="/Cause/sustainable-agriculture.html" class="footer-link">sustainable Agriculture</a></li>
+                        <li><a href="/Cause/food-distribution.html" class="footer-link">Food Distribution</a></li>
+                        <li><a href="/Cause/community-engagement.html" class="footer-link">Community Engagement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <ul class="footer-links-list">
+                        <li>
+                            <h3 class="footer-links-title">Resources</h3>
+                        </li>
+                        <li><a href="/Footer/term&condition/term&condition.html" class="footer-link">Terms & conditions</a></li>
+                        <li><a href="/Footer/FAQ/faq.html" class="footer-link">FAQ's</a></li>
+                        <li><a href="/Footer/policy-page/policy.html" class="footer-link">Policy</a></li>
+                    </ul>
+                </div>
+                <div class="contact-column">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Contact us</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span class="contact-text">+800 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span class="contact-text">5320 S Lindbergh Blvd</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span class="contact-text">sustain_share@help.com</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </nav>
+    </footer>
+
+    <script src="volunteer.js"></script>
+
+</body>
+
+</html>
